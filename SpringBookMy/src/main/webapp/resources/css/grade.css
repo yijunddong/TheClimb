@@ -1,0 +1,180 @@
+.white,
+.yellow,
+.orange,
+.green,
+.blue,
+.red,
+.purple,
+.grey,
+.brown,
+.black {
+  display: flex;
+  flex-wrap: wrap;
+ 
+ display:inline-block;
+}
+
+
+
+
+
+/* 그 외 스타일 유지... */
+.uploadGrade
+{
+  background-color: green; 
+  color: #fff; 
+  padding: 5px 10px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+ .uploadGrade,.colorButton:hover,.join:hover,.goToGym:hover, .col:hover, .sche:hover ,.reserve:hover{
+  background-color: #2775c4; /* 마우스 오버 시 배경색 변경 */
+}
+
+#joinButton,#loginButton,#searchPassButton, #memberUsage, #nonMemberUsage {
+  background-color: #2775c4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+.banner{
+  float:right;
+ 
+  
+  }
+  
+  #whiteButton {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yellowButton {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#orangeButton {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#greenButton {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#blueButton {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#redButton {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#purpleButton {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#greyButton {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#brownButton {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#blackButton {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colorButtons {
+  text-align: center; /* 가로 가운데 정렬 */
+  justify-content: center; /* 세로 가운데 정렬을 위한 스타일 */
+  background-color: whitesmoke;
+  z-index: 100;
+}
+.movie{
+ width: 100%;
+    
+  z-index: -110;
+}
+
+
+  h1{
+  font-size: 300%;
+}
+
+.diffvideo{
+	border: 1px solid black; 
+	float: left; 
+	width: 33%"
+}

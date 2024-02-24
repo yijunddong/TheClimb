@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UploadVideoDAO">
+
+<insert id="insertUploadVideo" parameterType="uploadvideo" useGeneratedKeys="true" keyProperty="seq">
+         <![CDATA[
+            INSERT INTO uploadvideo (id, title, filePath ,difficulty, branch)
+        VALUES (#{id}, #{title},#{filePath}, #{difficulty}, #{branch})
+   ]]>
+</insert>
+
+ 
+   <select id="getUploadVideoList" resultType="uploadVideo">
+		SELECT * FROM uploadvideo ORDER BY SEQ DESC
+		
+		 		
+	</select>
+	<select id="selectBranchUploadVideo" resultType="uploadVideo">
+    SELECT * FROM uploadvideo 
+    WHERE branch = #{difficulty}
+    ORDER BY SEQ DESC
+</select>
+
+
+<select id="selectGoodUploadVideo" resultType="uploadVideo">
+   SELECT * FROM uploadvideo ORDER BY good DESC LIMIT 1;
+</select>
+
+
+<update id="updateUploadVideo">
+      UPDATE uploadvideo
+    SET good = good+1
+    WHERE seq = #{seq}
+</update>
+
+    <!-- 다른 쿼리들도 여기에 추가할 수 있습니다. -->
+</mapper>
+
